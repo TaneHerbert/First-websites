@@ -277,9 +277,6 @@ iframe {
     display: flex;
     margin: 0;
   }
-  .navbar nav ul.primary-nav li {
-    padding-right: 0.5em;
-  }
   .navbar nav li.current a {
     font-weight: bold;
   }
@@ -298,6 +295,115 @@ iframe {
     background: var(--primary-color);
     -webkit-transition: 0.5s;
     transition: 0.5s;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  section.features-section {
+    position: relative;
+  }
+  section.features-section .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  section.features-section .container ul.features-list {
+    display: block;
+    margin-left: 5em;
+  }
+  section.features-section li {
+    font-size: 1.4em;
+  }
+  section.features-section li:before {
+    width: 30px;
+    height: 30px;
+  }
+  section.features-section img {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 350px;
+    bottom: -2em;
+  }
+  section {
+    padding: 10em 4em;
+  }
+  .hero .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .hero .container .left-col {
+    margin-right: 3em 3em 0 5em;
+  }
+  .hero .container .left-col h1 {
+    font-size: 3em;
+    width: 90%;
+  }
+  .hero-img {
+    width: 30%;
+    margin-right: 8em;
+  }
+  .hero-cta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .primary-cta {
+    margin-right: 1em;
+  }
+  .testimonials-section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .testimonials-section ul li {
+    margin: 0 1em;
+  }
+  .contact-section {
+    position: relative;
+  }
+  .contact-section .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contact-section .contact-right {
+    margin: 2em;
+    border-radius: 2em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+  }
+  .contact-section .contact-right iframe {
+    height: 100%;
+    border-radius: 2em;
+  }
+}
+
+@media only screen and (min-width: 1450px) {
+  .features-section:before {
+    content: "";
+    position: absolute;
+    width: 10%;
+    height: 20em;
+    background: var(--primary-color);
+    left: 0;
+    top: -4em;
+  }
+  .features-section:after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 20em;
+    background: url("../images/dots.svg") no-repeat;
+    left: 4.5em;
+    top: 2em;
   }
 }
 /*# sourceMappingURL=main.css.map */
