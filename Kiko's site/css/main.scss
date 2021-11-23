@@ -49,7 +49,8 @@ body {
         text-align: right;
 
         &:hover {
-          font-weight: bold;
+          // font-weight: bold;
+          text-shadow: 0px 0px 1px black; // similar effect to bolding, without changing size
         }
       }
     }
@@ -256,8 +257,13 @@ iframe {
         padding: 0.1em 1em;
       }
     }
+
     ul.primary-nav {
+      display: flex;
       margin: 0;
+      li {
+        padding-right: 0.5em;
+      }
     }
     li.current a {
       font-weight: bold;
@@ -274,7 +280,7 @@ iframe {
         color: white;
         background: var(--primary-color);
         transition: 0.5s;
-        font-weight: 500;
+        // font-weight: 500;
       }
     }
   }

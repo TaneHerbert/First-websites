@@ -51,7 +51,7 @@ body {
 }
 
 .navbar nav li a:hover {
-  font-weight: bold;
+  text-shadow: 0px 0px 1px black;
 }
 
 .navbar nav img.mobile-menu-exit {
@@ -272,7 +272,13 @@ iframe {
     padding: 0.1em 1em;
   }
   .navbar nav ul.primary-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin: 0;
+  }
+  .navbar nav ul.primary-nav li {
+    padding-right: 0.5em;
   }
   .navbar nav li.current a {
     font-weight: bold;
@@ -292,7 +298,6 @@ iframe {
     background: var(--primary-color);
     -webkit-transition: 0.5s;
     transition: 0.5s;
-    font-weight: 500;
   }
 }
 /*# sourceMappingURL=main.css.map */
