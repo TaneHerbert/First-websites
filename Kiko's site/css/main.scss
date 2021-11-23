@@ -235,9 +235,13 @@ iframe {
     display: none;
   }
   .navbar .container {
-    display: grid;
+    transition: 0.5s;
+    display: flex;
     grid-template-columns: 180px auto; // 180px for logo, take rest of space for remaining elements
     place-content: unset;
+    .logo {
+      margin-right: 3em;
+    }
   }
   .navbar nav {
     display: flex;
@@ -266,13 +270,13 @@ iframe {
       font-weight: bold;
     }
     li.go-premium-cta a {
+      margin-top: -0.2em;
       background: white;
       border: solid var(--primary-color) 3px;
       border-radius: 5em;
       color: var(--primary-color);
-      font-weight: bold;
-      margin-top: -0.2em;
-      transition: 0.5s;
+      // font-weight: bold;
+      transition: 0.2s ease-out;
       &:hover {
         color: white;
         background: var(--primary-color);
@@ -362,8 +366,18 @@ iframe {
 }
 
 @media only screen and (min-width: 1450px) {
+  .navbar {
+    .container {
+      display: flex;
+      font-size: 1.5em;
+      .logo {
+        margin-right: 3em;
+      }
+    }
+  }
   .features-section {
     &:before {
+      transition: 0.5s;
       content: "";
       position: absolute;
       width: 10%;
@@ -373,6 +387,7 @@ iframe {
       top: -4em;
     }
     &:after {
+      transition: 0.5s;
       content: "";
       position: absolute;
       width: 200px;
